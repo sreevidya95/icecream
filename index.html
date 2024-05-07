@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            form{
+                text-align: center;
+                border:1px solid black;
+                padding-top:10px;
+            }
+        </style>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <form>
+            <label for="ns">Number of Scoops</label>
+            <input type="number" min="1" max="4" id="ns" value="1"><br><br>
+            <input type="radio" name="ic" id="cone" value="cone">
+            <label for="cone"> cone</label>
+            <input type="radio" name="ic" id="cup" value="cup">
+            <label for="cup">Cup</label><br><br>
+            <div id="topp">Toppings<br><br>
+            <input type="checkbox" id="spr" value="sprinkles">
+            <label for="spr">Sprinkles ($.50)</label>
+            <input type="checkbox" id="wc" value="wipped cream">
+            <label for="wc">Wipped cream ($0.25)</label><br><br>
+            <input type="checkbox" id="hf" value="hf">
+            <label for="hf">Hot fudge ($1.25)</label>
+            <input type="checkbox" id="cherry" value="cherry">
+            <label for="cherry">Cherry ($0.25)</label><br><br>
+           </div>
+            <input type="button" id="sbtn" value="Submit Order"><br><br>
+            <div id="bp"></div>
+            <div id="tax"></div>
+            <div id="td"></div>
+    </body>
+</html>
